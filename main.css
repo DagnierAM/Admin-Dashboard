@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 100%;
+}
+aside{
+    color: white;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+.logo{
+    display: flex;
+    margin: 10px 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.sidebar-links, 
+.sidebar-environment{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+.sidebar-links img,
+.sidebar-environment img{
+    height: 20px;
+}
+
+.sidebar-links label,
+.sidebar-environment label{
+    justify-self: end;
+    padding-left: 2rem;
+}
+.sidebar-links a,
+.sidebar-environment a{
+    justify-self: start;
+}
+.sidebar-environment{
+    margin-top: 3rem;
+}
+
+aside a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    background-color: #ADD8E6;
+}
+header{
+    background-color: white;
+    margin-top: -20px;
+}
+.searchbar {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    width: 70%;
+}
+.searchbar input{
+    width: 80%;
+    padding: 7px;
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #ADD8E6;
+}
+.searchbar input:focus{
+    background-color: white;
+}
+.searchbar > label{
+    cursor: pointer;
+}
+.header-line{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 2.5rem;
+    padding-top: 1rem;
+}
+.right-side-header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.right-side-header #bell-pic{
+    height: 25px;
+    cursor: pointer;
+}
+.right-side-header #profile-pic{
+    height: 50px;
+    cursor: pointer;
+}
+
+.subheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.greeting{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+.greeting span{
+    display: block;
+    font-weight: normal;
+    font-size: small;
+}
+
+.function-buttons{
+    margin-right: 3rem;
+    display: flex;
+    gap: 2rem;
+    width: 30%;
+}
+
+.function-buttons button{
+    padding: 12px 16px;
+    border-radius: 25px;
+    color: white;
+    background-color: blue;
+    border: none;
+    width: 125px;
+    cursor: pointer;
+}
+
+article{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.left-article h2{
+    text-align: left;
+    margin-left: 2rem;
+    padding-left: 2rem;
+}
+.right-article h2{
+    padding-left: 1rem;
+}
+
+.left-article{
+    justify-self: center;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 8px;
+    padding: 0 2rem 0 2rem;
+}
+.card{
+    border-left: 10px solid #EC372F;
+    box-shadow: 5px 5px 10px 3px #595953;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    justify-items: center;
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    height: 200px;
+}
+.card-icons{
+    justify-self: end;
+    align-self: end;
+}
+.card-icons img{
+    height: 20px;
+    cursor: pointer;
+}
+
+.announcement-container,
+.trending-container{
+    background-color: white;
+    padding: 0 2rem 0 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 25px;
+    margin: 1rem 3rem 2rem 0;
+}
+
+.announcement-content,
+.trending-content{
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+.announcement-content  > p,
+.trending-content > p{
+    font-size: .8rem;
+}
+
+.trending-content{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1.5rem;
+}
+.trending-content:not(:last-of-type),
+.announcement-content:not(:last-of-type){
+    border-bottom: 2px solid #808080;
+}
+.trending-content img{
+    height: 45px;
+    border-radius: 50%;
+    background-color: #f5f5dc ;
+    padding: 5px;
+}
+.trending-content span{
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+}
