@@ -37,8 +37,8 @@ aside{
     height: 20px;
 }
 
-.sidebar-links label,
-.sidebar-environment label{
+.sidebar-links img,
+.sidebar-environment img{
     justify-self: end;
     padding-left: 2rem;
 }
